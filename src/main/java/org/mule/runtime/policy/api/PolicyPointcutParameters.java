@@ -48,7 +48,7 @@ public class PolicyPointcutParameters {
    *
    * @param sourceParameters the parameters used to resolve source pointcuts
    */
-  public void addOriginalParameters(PolicyPointcutParameters sourceParameters) {
+  public void addSourceParameters(PolicyPointcutParameters sourceParameters) {
     this.sourceParameters = sourceParameters;
   }
 
