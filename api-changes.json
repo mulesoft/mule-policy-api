@@ -1,0 +1,43 @@
+{
+  "1.1.2": {
+    "revapi": {
+      "ignore": [
+        {
+          "code": "java.method.addedToInterface",
+          "new": "method org.mule.runtime.policy.api.PolicyPointcutParameters org.mule.runtime.policy.api.OperationPolicyPointcutParametersFactory::createPolicyPointcutParameters(org.mule.runtime.policy.api.OperationPolicyPointcutParametersParameters)",
+          "package": "org.mule.runtime.policy.api",
+          "classSimpleName": "OperationPolicyPointcutParametersFactory",
+          "methodName": "createPolicyPointcutParameters",
+          "elementKind": "method",
+          "justification": "MULE-14850: Method with new parameters needed to solve policy pointcuts"
+        },
+        {
+          "code": "java.class.added",
+          "new": "class org.mule.runtime.policy.api.OperationPolicyPointcutParametersParameters",
+          "package": "org.mule.runtime.policy.api",
+          "classSimpleName": "OperationPolicyPointcutParametersParameters",
+          "elementKind": "class",
+          "justification": "MULE-14850: Method with new parameters needed to solve policy pointcuts"
+        },
+        {
+          "code": "java.method.added",
+          "new": "method void org.mule.runtime.policy.api.PolicyPointcutParameters::<init>(org.mule.runtime.api.component.Component, org.mule.runtime.policy.api.PolicyPointcutParameters)",
+          "package": "org.mule.runtime.policy.api",
+          "classSimpleName": "PolicyPointcutParameters",
+          "methodName": "<init>",
+          "elementKind": "constructor",
+          "justification": "MULE-14850: Method with new parameters needed to solve policy pointcuts"
+        },
+        {
+          "code": "java.method.added",
+          "new": "method java.util.Optional<org.mule.runtime.policy.api.PolicyPointcutParameters> org.mule.runtime.policy.api.PolicyPointcutParameters::getSourceParameters()",
+          "package": "org.mule.runtime.policy.api",
+          "classSimpleName": "PolicyPointcutParameters",
+          "methodName": "getSourceParameters",
+          "elementKind": "method",
+          "justification": "MULE-14850: Method with new parameters needed to solve policy pointcuts"
+        }
+      ]
+    }
+  }
+}
