@@ -1,5 +1,5 @@
 {
-  "1.1.2": {
+  "1.2.0": {
     "revapi": {
       "ignore": [
         {
@@ -9,7 +9,7 @@
           "classSimpleName": "OperationPolicyPointcutParametersFactory",
           "methodName": "createPolicyPointcutParameters",
           "elementKind": "method",
-          "justification": ""
+          "justification": "MULE-14850: Method with new parameters needed to solve policy pointcuts"
         }
       ]
     }

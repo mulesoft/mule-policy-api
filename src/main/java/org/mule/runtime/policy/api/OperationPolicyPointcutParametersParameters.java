@@ -6,6 +6,7 @@
  */
 package org.mule.runtime.policy.api;
 
+import org.mule.api.annotation.NoExtend;
 import org.mule.runtime.api.component.Component;
 
 import java.util.Map;
@@ -15,6 +16,7 @@ import java.util.Map;
  *
  * @since 4.1
  */
+@NoExtend
 public class OperationPolicyPointcutParametersParameters {
 
   private final Component operation;
