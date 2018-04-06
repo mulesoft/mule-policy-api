@@ -24,7 +24,7 @@ public class PolicyPointcutParameters {
 
   private final Component component;
 
-  private PolicyPointcutParameters sourceParameters;
+  private final PolicyPointcutParameters sourceParameters;
 
   /**
    * Creates a new {@link PolicyPointcutParameters}
@@ -32,7 +32,18 @@ public class PolicyPointcutParameters {
    * @param component the component where the policy is being applied.
    */
   public PolicyPointcutParameters(Component component) {
+    this(component, null);
+  }
+
+  /**
+   * Creates a new {@link PolicyPointcutParameters}
+   *
+   * @param component the component where the policy is being applied.
+   * @param sourceParameters parameters used to match pointcuts of source policies
+   */
+  public PolicyPointcutParameters(Component component, PolicyPointcutParameters sourceParameters) {
     this.component = component;
+    this.sourceParameters = sourceParameters;
   }
 
   /**
@@ -44,15 +55,8 @@ public class PolicyPointcutParameters {
 
   /**
    * When resolving operation pointcuts, sometimes it is necessary to correlate them with the source pointcuts, specially when
-   * a policy defines both source and operation. This allow to set the parameters used to resolve source pointcuts.
+   * a policy defines both source and operation.
    *
-   * @param sourceParameters the parameters used to resolve source pointcuts
-   */
-  public void addSourceParameters(PolicyPointcutParameters sourceParameters) {
-    this.sourceParameters = sourceParameters;
-  }
-
-  /**
    * @return the parameters used to resolve source pointcuts
    */
   public Optional<PolicyPointcutParameters> getSourceParameters() {

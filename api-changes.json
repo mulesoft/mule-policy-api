@@ -1,0 +1,17 @@
+{
+  "1.1.2": {
+    "revapi": {
+      "ignore": [
+        {
+          "code": "java.method.addedToInterface",
+          "new": "method org.mule.runtime.policy.api.PolicyPointcutParameters org.mule.runtime.policy.api.OperationPolicyPointcutParametersFactory::createPolicyPointcutParameters(org.mule.runtime.policy.api.OperationPolicyPointcutParametersParameters)",
+          "package": "org.mule.runtime.policy.api",
+          "classSimpleName": "OperationPolicyPointcutParametersFactory",
+          "methodName": "createPolicyPointcutParameters",
+          "elementKind": "method",
+          "justification": ""
+        }
+      ]
+    }
+  }
+}
