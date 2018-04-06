@@ -6,7 +6,11 @@
  */
 package org.mule.runtime.policy.api;
 
+import static java.util.Optional.ofNullable;
+
 import org.mule.runtime.api.component.Component;
+
+import java.util.Optional;
 
 /**
  * This class defines a set of parameters related to the execution of a component. In particular to the execution of a source or
@@ -20,13 +24,26 @@ public class PolicyPointcutParameters {
 
   private final Component component;
 
+  private final PolicyPointcutParameters sourceParameters;
+
   /**
    * Creates a new {@link PolicyPointcutParameters}
    *
    * @param component the component where the policy is being applied.
    */
   public PolicyPointcutParameters(Component component) {
+    this(component, null);
+  }
+
+  /**
+   * Creates a new {@link PolicyPointcutParameters}
+   *
+   * @param component the component where the policy is being applied.
+   * @param sourceParameters parameters used to match pointcuts of source policies
+   */
+  public PolicyPointcutParameters(Component component, PolicyPointcutParameters sourceParameters) {
     this.component = component;
+    this.sourceParameters = sourceParameters;
   }
 
   /**
@@ -36,4 +53,13 @@ public class PolicyPointcutParameters {
     return component;
   }
 
+  /**
+   * When resolving operation pointcuts, sometimes it is necessary to correlate them with the source pointcuts, specially when
+   * a policy defines both source and operation.
+   *
+   * @return the parameters used to resolve source pointcuts
+   */
+  public Optional<PolicyPointcutParameters> getSourceParameters() {
+    return ofNullable(sourceParameters);
+  }
 }

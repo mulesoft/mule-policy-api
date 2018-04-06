@@ -6,8 +6,8 @@
  */
 package org.mule.runtime.policy.api;
 
-import org.mule.runtime.api.component.ComponentIdentifier;
 import org.mule.runtime.api.component.Component;
+import org.mule.runtime.api.component.ComponentIdentifier;
 
 import java.util.Map;
 
@@ -27,13 +27,28 @@ public interface OperationPolicyPointcutParametersFactory {
   boolean supportsOperationIdentifier(ComponentIdentifier operationIdentifier);
 
   /**
-   * Creates an specific {@link PolicyPointcutParameters} for a particular operation identifier by {@code operationIdentifier}.
+   * Creates a specific {@link PolicyPointcutParameters} for a particular operation identifier by {@code operationIdentifier}.
    *
    * @param operation the operation where the policy is being applied.
    * @param operationParameters set of parameters that are going to be used to execute the operation.
    * @return the pointcut parameters.
+   * 
+   * @deprecated on 4.2 use
+   *             {@link OperationPolicyPointcutParametersFactory#createPolicyPointcutParameters(OperationPolicyPointcutParametersParameters)}
+   *             instead
    */
-  PolicyPointcutParameters createPolicyPointcutParameters(Component operation,
-                                                          Map<String, Object> operationParameters);
+  @Deprecated
+  default PolicyPointcutParameters createPolicyPointcutParameters(Component operation,
+                                                                  Map<String, Object> operationParameters) {
+    return createPolicyPointcutParameters(new OperationPolicyPointcutParametersParameters(operation, operationParameters));
+  }
+
+  /**
+   * Creates a specific {@link PolicyPointcutParameters} using the specified {@link OperationPolicyPointcutParametersParameters}
+   *
+   * @param pointcutParametersParameters parameters used for creating the {@link PolicyPointcutParameters}
+   * @return the pointcut parameters.
+   */
+  PolicyPointcutParameters createPolicyPointcutParameters(OperationPolicyPointcutParametersParameters pointcutParametersParameters);
 
 }
