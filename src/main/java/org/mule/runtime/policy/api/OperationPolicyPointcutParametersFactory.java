@@ -34,21 +34,25 @@ public interface OperationPolicyPointcutParametersFactory {
    * @return the pointcut parameters.
    * 
    * @deprecated on 4.2 use
-   *             {@link OperationPolicyPointcutParametersFactory#createPolicyPointcutParameters(OperationPolicyPointcutParametersParameters)}
+   *             {@link OperationPolicyPointcutParametersFactory#createPolicyPointcutParameters(Component, Map, PolicyPointcutParameters)}}
    *             instead
    */
   @Deprecated
   default PolicyPointcutParameters createPolicyPointcutParameters(Component operation,
                                                                   Map<String, Object> operationParameters) {
-    return createPolicyPointcutParameters(new OperationPolicyPointcutParametersParameters(operation, operationParameters));
+    return createPolicyPointcutParameters(operation, operationParameters, null);
   }
 
   /**
-   * Creates a specific {@link PolicyPointcutParameters} using the specified {@link OperationPolicyPointcutParametersParameters}
+   * Creates a specific {@link PolicyPointcutParameters} for a particular operation identifier by {@code operationIdentifier}.
    *
-   * @param pointcutParametersParameters parameters used for creating the {@link PolicyPointcutParameters}
+   * @param operation the operation where the policy is being applied.
+   * @param operationParameters set of parameters that are going to be used to execute the operation.
+   * @param policyPointcutParameters parameters used for creating the {@link PolicyPointcutParameters}
    * @return the pointcut parameters.
    */
-  PolicyPointcutParameters createPolicyPointcutParameters(OperationPolicyPointcutParametersParameters pointcutParametersParameters);
+  PolicyPointcutParameters createPolicyPointcutParameters(Component operation,
+                                                          Map<String, Object> operationParameters,
+                                                          PolicyPointcutParameters policyPointcutParameters);
 
 }
