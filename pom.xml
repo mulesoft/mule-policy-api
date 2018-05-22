@@ -110,7 +110,7 @@
 
         <muleApiVersion>1.2.0-SNAPSHOT</muleApiVersion>
 
-        <aspectjVersion>1.8.10</aspectjVersion>
+        <aspectjVersion>1.9.1</aspectjVersion>
 
         <muleModuleMavenPluginVersion>1.2.0-SNAPSHOT</muleModuleMavenPluginVersion>
 
