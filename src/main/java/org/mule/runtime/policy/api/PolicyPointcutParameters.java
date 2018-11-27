@@ -10,6 +10,7 @@ import static java.util.Optional.ofNullable;
 
 import org.mule.runtime.api.component.Component;
 
+import java.util.Objects;
 import java.util.Optional;
 
 /**
@@ -62,4 +63,22 @@ public class PolicyPointcutParameters {
   public Optional<PolicyPointcutParameters> getSourceParameters() {
     return ofNullable(sourceParameters);
   }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(component, sourceParameters);
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj)
+      return true;
+    if (obj == null)
+      return false;
+    if (getClass() != obj.getClass())
+      return false;
+    PolicyPointcutParameters other = (PolicyPointcutParameters) obj;
+    return Objects.equals(component, other.component) && Objects.equals(sourceParameters, other.sourceParameters);
+  }
+
 }
