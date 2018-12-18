@@ -10,14 +10,15 @@ import static java.util.Optional.ofNullable;
 
 import org.mule.runtime.api.component.Component;
 
+import java.util.Objects;
 import java.util.Optional;
 
 /**
  * This class defines a set of parameters related to the execution of a component. In particular to the execution of a source or
  * an operation.
- * 
+ *
  * These parameters will later by used during policy lookup to match it against a configured pointcut.
- * 
+ *
  * @since 4.0
  */
 public class PolicyPointcutParameters {
@@ -62,4 +63,25 @@ public class PolicyPointcutParameters {
   public Optional<PolicyPointcutParameters> getSourceParameters() {
     return ofNullable(sourceParameters);
   }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(component, sourceParameters);
+  }
+
+  @Override
+  public boolean equals(Object obj) {
+    if (this == obj) {
+      return true;
+    }
+    if (obj == null) {
+      return false;
+    }
+    if (getClass() != obj.getClass()) {
+      return false;
+    }
+    PolicyPointcutParameters other = (PolicyPointcutParameters) obj;
+    return Objects.equals(component, other.component) && Objects.equals(sourceParameters, other.sourceParameters);
+  }
+
 }
