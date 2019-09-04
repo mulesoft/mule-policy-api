@@ -108,18 +108,18 @@
         <javaVersion>1.8</javaVersion>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
 
-        <muleApiVersion>1.2.2-SNAPSHOT</muleApiVersion>
+        <muleApiVersion>1.2.3-SNAPSHOT</muleApiVersion>
 
         <aspectjVersion>1.9.2</aspectjVersion>
 
-        <muleModuleMavenPluginVersion>1.1.1-SNAPSHOT</muleModuleMavenPluginVersion>
+        <muleModuleMavenPluginVersion>1.1.2-SNAPSHOT</muleModuleMavenPluginVersion>
 
         <javaFormatter.plugin.version>2.0.1</javaFormatter.plugin.version>
         <formatterConfigPath>formatter.xml</formatterConfigPath>
         <formatterGoal>validate</formatterGoal>
 
         <revapi.maven.plugin.version>0.9.5</revapi.maven.plugin.version>
-        <muleRevapiExtensionVersion>1.2.1-SNAPSHOT</muleRevapiExtensionVersion>
+        <muleRevapiExtensionVersion>1.2.2-SNAPSHOT</muleRevapiExtensionVersion>
         <oldMuleArtifactVersion>1.1.2</oldMuleArtifactVersion>
 
         <license.maven.plugin.version>2.11</license.maven.plugin.version>
