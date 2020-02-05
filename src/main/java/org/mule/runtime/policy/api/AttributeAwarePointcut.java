@@ -25,5 +25,5 @@ public interface AttributeAwarePointcut extends PolicyPointcut {
    *
    * @since 4.3
    */
-  Set<PolicyAwareAttribute> sourcePolicyAwareAtributes();
+  Set<PolicyAwareAttribute> sourcePolicyAwareAttributes();
 }
