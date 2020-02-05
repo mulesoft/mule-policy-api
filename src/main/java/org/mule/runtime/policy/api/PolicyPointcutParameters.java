@@ -16,7 +16,7 @@ import java.util.Optional;
 /**
  * This class defines a set of parameters related to the execution of a component. In particular to the execution of a source or
  * an operation.
- *
+ * <p>
  * These parameters will later by used during policy lookup to match it against a configured pointcut.
  *
  * @since 4.0
@@ -62,6 +62,12 @@ public class PolicyPointcutParameters {
    */
   public Optional<PolicyPointcutParameters> getSourceParameters() {
     return ofNullable(sourceParameters);
+  }
+
+  @Override
+  public String toString() {
+    return "PolicyPointcutParameters{component:" + component.getLocation().getLocation() + "; sourceParameters:"
+        + sourceParameters + "}";
   }
 
   @Override
