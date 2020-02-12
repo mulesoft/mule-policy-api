@@ -6,8 +6,6 @@
  */
 package org.mule.runtime.policy.api;
 
-import java.util.Set;
-
 /**
  * Interface for classes that implement {@link PolicyPointcut}.
  * <p>
@@ -25,5 +23,5 @@ public interface AttributeAwarePointcut extends PolicyPointcut {
    *
    * @since 4.3
    */
-  Set<PolicyAwareAttribute> sourcePolicyAwareAttributes();
+  PolicyAwareAttributes sourcePolicyAwareAttributes();
 }
