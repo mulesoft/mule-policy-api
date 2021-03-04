@@ -55,8 +55,8 @@ public class PolicyPointcutParameters {
   }
 
   /**
-   * When resolving operation pointcuts, sometimes it is necessary to correlate them with the source pointcuts, specially when
-   * a policy defines both source and operation.
+   * When resolving operation pointcuts, sometimes it is necessary to correlate them with the source pointcuts, specially when a
+   * policy defines both source and operation.
    *
    * @return the parameters used to resolve source pointcuts
    */
