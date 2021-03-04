@@ -39,7 +39,7 @@ public class PolicyPointcutParameters {
   /**
    * Creates a new {@link PolicyPointcutParameters}
    *
-   * @param component the component where the policy is being applied.
+   * @param component        the component where the policy is being applied.
    * @param sourceParameters parameters used to match pointcuts of source policies
    */
   public PolicyPointcutParameters(Component component, PolicyPointcutParameters sourceParameters) {

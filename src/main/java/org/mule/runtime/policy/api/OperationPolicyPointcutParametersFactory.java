@@ -29,7 +29,7 @@ public interface OperationPolicyPointcutParametersFactory {
   /**
    * Creates a specific {@link PolicyPointcutParameters} for a particular operation identifier by {@code operationIdentifier}.
    *
-   * @param operation the operation where the policy is being applied.
+   * @param operation           the operation where the policy is being applied.
    * @param operationParameters set of parameters that are going to be used to execute the operation.
    * @return the pointcut parameters.
    * 
@@ -46,8 +46,8 @@ public interface OperationPolicyPointcutParametersFactory {
   /**
    * Creates a specific {@link PolicyPointcutParameters} for a particular operation identifier by {@code operationIdentifier}.
    *
-   * @param operation the operation where the policy is being applied.
-   * @param operationParameters set of parameters that are going to be used to execute the operation.
+   * @param operation                the operation where the policy is being applied.
+   * @param operationParameters      set of parameters that are going to be used to execute the operation.
    * @param policyPointcutParameters parameters used for creating the {@link PolicyPointcutParameters}
    * @return the pointcut parameters.
    */
