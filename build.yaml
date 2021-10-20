@@ -1,5 +1,5 @@
 upstreamProjects:
-  Mule-runtime/mule-api/master
+  Mule-runtime/mule-api/master-NOVEMBER-2021
 mavenSettingsXmlId: mule-runtime-maven-settings-MuleSettings
 projectType: runtime
 enableMavenTestStage: false
