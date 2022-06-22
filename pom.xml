@@ -6,7 +6,7 @@
 
     <groupId>org.mule.runtime</groupId>
     <artifactId>mule-module-policy-api</artifactId>
-    <version>1.2.0-HF-SNAPSHOT</version>
+    <version>1.2.0-20220622</version>
     <name>Mule module Policy API</name>
     <description>Mule module Policy API</description>
 
