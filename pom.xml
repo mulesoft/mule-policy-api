@@ -387,7 +387,23 @@
                                             }
                                           }
                                         }
-                                    }
+                                    },
+                                    "ignore": [
+                                      {
+                                        "code": "java.annotation.removed",
+                                        "annotationType": "jdk.internal.HotSpotIntrinsicCandidate",
+                                        "annotation": "@jdk.internal.HotSpotIntrinsicCandidate",
+                                        "elementKind": "method",
+                                        "justification": "This annotation is in jdk class, this is a false positive."
+                                      },
+                                      {
+                                        "code": "java.annotation.removed",
+                                        "annotationType": "jdk.internal.vm.annotation.IntrinsicCandidate",
+                                        "annotation": "@jdk.internal.vm.annotation.IntrinsicCandidate",
+                                        "elementKind": "method",
+                                        "justification": "This annotation is in jdk class, this is a false positive."
+                                      }
+                                    ]
                                 }
                             ]]></analysisConfiguration>
                     <analysisConfigurationFiles combine.children="append">
