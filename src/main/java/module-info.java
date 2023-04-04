@@ -5,6 +5,12 @@
  * LICENSE.txt file.
  */
 
+/**
+ * Mule module Policy API.
+ * 
+ * @moduleGraph
+ * @since 1.6
+ */
 module org.mule.runtime.policy.api {
   
   requires org.mule.runtime.api;
