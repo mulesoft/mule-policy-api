@@ -2,4 +2,5 @@ upstreamProjects:
   Mule-runtime/mule-api/master
 mavenSettingsXmlId: mule-runtime-maven-settings-MuleSettings
 projectType: runtime
+jdkTool: OPEN-JDK17
 enableMavenTestStage: false
