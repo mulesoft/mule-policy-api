@@ -136,6 +136,7 @@
         <maven.enforcer.plugin.version>1.4.1</maven.enforcer.plugin.version>
         <buildHelperMavenPluginVersion>3.0.0</buildHelperMavenPluginVersion>
 
+        <maven.jar.plugin.version>3.3.0</maven.jar.plugin.version>
         <maven.site.plugin.version>3.9.0</maven.site.plugin.version>
     </properties>
 
@@ -241,6 +242,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
+                    <version>${maven.jar.plugin.version}</version>
                     <executions>
                         <execution>
                             <id>attach-test-jar</id>
