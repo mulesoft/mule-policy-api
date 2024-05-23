@@ -109,7 +109,7 @@
         <javaReleaseVersion>8</javaReleaseVersion>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
 
-        <muleApiVersion>1.7.0-rc4</muleApiVersion>
+        <muleApiVersion>1.7.0</muleApiVersion>
 
         <aspectjVersion>1.9.2</aspectjVersion>
 
