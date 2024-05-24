@@ -6,7 +6,7 @@
 
     <groupId>org.mule.runtime</groupId>
     <artifactId>mule-module-policy-api</artifactId>
-    <version>1.7.0-SNAPSHOT</version>
+    <version>1.7.1-SNAPSHOT</version>
     <name>Mule module Policy API</name>
     <description>Mule module Policy API</description>
 
@@ -109,19 +109,19 @@
         <javaReleaseVersion>8</javaReleaseVersion>
         <project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
 
-        <muleApiVersion>1.7.0-SNAPSHOT</muleApiVersion>
+        <muleApiVersion>1.7.1-SNAPSHOT</muleApiVersion>
 
         <aspectjVersion>1.9.2</aspectjVersion>
 
-        <muleModuleMavenPluginVersion>1.7.0-SNAPSHOT</muleModuleMavenPluginVersion>
+        <muleModuleMavenPluginVersion>1.7.1-SNAPSHOT</muleModuleMavenPluginVersion>
 
         <javaFormatter.plugin.version>2.14.0</javaFormatter.plugin.version>
         <formatterConfigPath>formatter.xml</formatterConfigPath>
         <formatterGoal>validate</formatterGoal>
 
         <revapi.maven.plugin.version>0.15.0</revapi.maven.plugin.version>
-        <muleRevapiExtensionVersion>1.7.0-SNAPSHOT</muleRevapiExtensionVersion>
-        <oldMuleArtifactVersion>1.6.0-rc1</oldMuleArtifactVersion>
+        <muleRevapiExtensionVersion>1.7.1-SNAPSHOT</muleRevapiExtensionVersion>
+        <oldMuleArtifactVersion>1.6.0</oldMuleArtifactVersion>
 
         <mulesoftLicenseVersion>1.4.0</mulesoftLicenseVersion>
         <license.maven.plugin.version>4.2</license.maven.plugin.version>
