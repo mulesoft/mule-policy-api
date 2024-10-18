@@ -12,7 +12,7 @@
 
     <groupId>org.mule.runtime</groupId>
     <artifactId>mule-module-policy-api</artifactId>
-    <version>1.8.1-SNAPSHOT</version>
+    <version>1.8.1-rc1</version>
     <name>Mule module Policy API</name>
     <description>Mule module Policy API</description>
 
