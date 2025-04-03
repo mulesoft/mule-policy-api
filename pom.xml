@@ -113,7 +113,7 @@
 
         <aspectjVersion>1.9.2</aspectjVersion>
 
-        <muleModuleMavenPluginVersion>1.5.16-rc1</muleModuleMavenPluginVersion>
+        <muleModuleMavenPluginVersion>1.5.16</muleModuleMavenPluginVersion>
 
         <javaFormatter.plugin.version>2.14.0</javaFormatter.plugin.version>
         <formatterConfigPath>formatter.xml</formatterConfigPath>
