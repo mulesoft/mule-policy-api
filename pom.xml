@@ -13,7 +13,7 @@
 
     <groupId>org.mule.runtime</groupId>
     <artifactId>mule-module-policy-api</artifactId>
-    <version>1.9.3-rc1</version>
+    <version>1.9.3</version>
     <name>Mule module Policy API</name>
     <description>Mule module Policy API</description>
 
