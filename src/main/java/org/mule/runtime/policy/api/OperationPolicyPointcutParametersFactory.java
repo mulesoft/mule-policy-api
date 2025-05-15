@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * Instances of this factory must be registered in the application's context and will be discovered and used to create the set of
  * pointcut parameters for an operation before executing it.
- * 
+ *
  * @since 4.0
  */
 public interface OperationPolicyPointcutParametersFactory {
@@ -32,7 +32,7 @@ public interface OperationPolicyPointcutParametersFactory {
    * @param operation           the operation where the policy is being applied.
    * @param operationParameters set of parameters that are going to be used to execute the operation.
    * @return the pointcut parameters.
-   * 
+   *
    * @deprecated on 4.2 use
    *             {@link OperationPolicyPointcutParametersFactory#createPolicyPointcutParameters(Component, Map, PolicyPointcutParameters)}}
    *             instead
