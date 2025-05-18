@@ -7,13 +7,13 @@
     <parent>
         <groupId>org.mule</groupId>
         <artifactId>mule-plugin-mgmt-parent-pom</artifactId>
-        <version>4.9.5-SNAPSHOT</version>
+        <version>4.9.6-SNAPSHOT</version>
         <relativePath/>
     </parent>
 
     <groupId>org.mule.runtime</groupId>
     <artifactId>mule-module-policy-api</artifactId>
-    <version>1.9.5-SNAPSHOT</version>
+    <version>1.9.6-SNAPSHOT</version>
     <name>Mule module Policy API</name>
     <description>Mule module Policy API</description>
 
@@ -115,8 +115,8 @@
         <javaVersion>1.8</javaVersion>
         <javaReleaseVersion>8</javaReleaseVersion>
 
-        <muleApiVersion>1.9.5-SNAPSHOT</muleApiVersion>
-        <muleModuleMavenPluginVersion>1.9.5-SNAPSHOT</muleModuleMavenPluginVersion>
+        <muleApiVersion>1.9.6-SNAPSHOT</muleApiVersion>
+        <muleModuleMavenPluginVersion>1.9.6-SNAPSHOT</muleModuleMavenPluginVersion>
 
         <oldMuleArtifactVersion>1.7.0-rc1</oldMuleArtifactVersion>
 
