@@ -116,7 +116,7 @@
         <javaReleaseVersion>8</javaReleaseVersion>
 
         <muleApiVersion>1.10.0-20250619</muleApiVersion>
-        <muleModuleMavenPluginVersion>1.10.0-SNAPSHOT</muleModuleMavenPluginVersion>
+        <muleModuleMavenPluginVersion>1.10.0-20250619</muleModuleMavenPluginVersion>
 
         <oldMuleArtifactVersion>1.7.0-rc1</oldMuleArtifactVersion>
 
